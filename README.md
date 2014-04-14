@@ -1,4 +1,4 @@
 MySfotipy
 =========
 
-My own projecto of sfotipy like in mejorando.la
+My own project of sfotipy like in mejorando.la
