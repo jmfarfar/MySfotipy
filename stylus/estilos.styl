@@ -3,6 +3,7 @@
 
 gris_claro = #818181
 gris_oscuro = #333333
+rojo = #BD255B
 
 a
 	text-decoration none
@@ -14,10 +15,25 @@ body
 figure
 	margin 0
 
+img
+	vertical-align top
+
+.action
+	color white
+	margin-right .5em
+	font-size 1.2em
+	&:last-child
+		margin-right 0
+	&.gray
+		color gris_claro
+
+
 .actions
 	position absolute
-	top 0
-
+	bottom 0
+	left 0
+	right 0
+	background rgba(black, .3)
 
 .author
 	color gris_claro
@@ -60,12 +76,58 @@ figure
 .name
 	color gris_oscuro
 
+.padding
+	padding 1em
+
+.padding-tb
+	padding 1em 0
+
 .playing
 	&.small
 		width 20em
 
+.progress
+	position relative
+	margin 1em 0
+	.min
+	.max
+		font-size .8em
+		top -5px
+		position absolute
+	.min
+		
+		left 0
+	.max 
+		
+		right 0
+	.total
+		height 5px
+		background gris_claro
+		width 75%
+		border-radius 5px
+		margin 0 auto
+
+	.state
+		height 5px
+		background rojo
+		width 30%
+		border-radius 5px
+		position relative
+	.circle
+		width 10px
+		height 10px
+		background gris_oscuro
+		border-radius 50%
+		position absolute
+		right 0
+		top -2px
+
 .relative
 	position relative
+
+.right-text
+	text-align right
+
 .song
 	display inline-block
 	font-size 1rem
