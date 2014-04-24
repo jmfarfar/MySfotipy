@@ -85,7 +85,7 @@ img
 .playing
 	&.small
 		width 20em
-
+	
 .progress
 	position relative
 	margin 1em 0
@@ -139,3 +139,13 @@ img
 		margin-right 0
 	p
 		margin .5em 0
+
+
+@media screen and (min-width:480px)	
+	.song	
+		&:nth-child(even)
+			margin-right 1em
+
+	.playing
+		&.medium
+			width auto
